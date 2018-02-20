@@ -11,6 +11,8 @@
 		2786BC53203CB89300F98DB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786BC52203CB89300F98DB3 /* ViewController.swift */; };
 		2786BC55203CB89300F98DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2786BC54203CB89300F98DB3 /* Assets.xcassets */; };
 		2786BC58203CB89300F98DB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2786BC56203CB89300F98DB3 /* Main.storyboard */; };
+		2786BC62203CD7D100F98DB3 /* NSViewOpaqueBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786BC60203CD7D100F98DB3 /* NSViewOpaqueBackground.swift */; };
+		2786BC63203CD7D100F98DB3 /* NSViewOpaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786BC61203CD7D100F98DB3 /* NSViewOpaque.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		2786BC57203CB89300F98DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2786BC59203CB89300F98DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2786BC5A203CB89300F98DB3 /* popover_problem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = popover_problem.entitlements; sourceTree = "<group>"; };
+		2786BC60203CD7D100F98DB3 /* NSViewOpaqueBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewOpaqueBackground.swift; sourceTree = "<group>"; };
+		2786BC61203CD7D100F98DB3 /* NSViewOpaque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewOpaque.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				2786BC50203CB89300F98DB3 /* AppDelegate.swift */,
 				2786BC52203CB89300F98DB3 /* ViewController.swift */,
+				2786BC61203CD7D100F98DB3 /* NSViewOpaque.swift */,
+				2786BC60203CD7D100F98DB3 /* NSViewOpaqueBackground.swift */,
 				2786BC54203CB89300F98DB3 /* Assets.xcassets */,
 				2786BC56203CB89300F98DB3 /* Main.storyboard */,
 				2786BC59203CB89300F98DB3 /* Info.plist */,
@@ -134,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2786BC63203CD7D100F98DB3 /* NSViewOpaque.swift in Sources */,
 				2786BC53203CB89300F98DB3 /* ViewController.swift in Sources */,
+				2786BC62203CD7D100F98DB3 /* NSViewOpaqueBackground.swift in Sources */,
 				2786BC51203CB89300F98DB3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
-        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -689,53 +688,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box autoresizesSubviews="NO" boxType="custom" borderType="none" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="l5a-dh-wyj" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <view key="contentView" id="eBM-mq-pDV">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-2o-ihe">
-                                            <rect key="frame" x="18" y="234" width="326" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Look at this horrible transparent background paint" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="BMm-ap-0x3">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-BZ-mjN">
-                                            <rect key="frame" x="18" y="214" width="181" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="It's still bad in this one too" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cLe-lp-wDO">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sE9-QZ-EsO">
-                                            <rect key="frame" x="18" y="194" width="189" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="What can be done about it?" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="tXH-JV-w8q">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-KA-lQh">
-                                            <rect key="frame" x="20" y="159" width="16" height="16"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        </progressIndicator>
-                                    </subviews>
-                                </view>
-                                <color key="borderColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                <color key="fillColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                <font key="titleFont" metaFont="smallSystem"/>
-                            </box>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-2o-ihe">
+                                <rect key="frame" x="77" y="234" width="326" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Look at this horrible transparent background paint" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="BMm-ap-0x3">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-BZ-mjN">
+                                <rect key="frame" x="149" y="212" width="181" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="It's still bad in this one too" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cLe-lp-wDO">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sE9-QZ-EsO">
+                                <rect key="frame" x="145" y="188" width="189" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="What can be done about it?" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="tXH-JV-w8q">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-KA-lQh">
+                                <rect key="frame" x="128" y="128" width="16" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzB-iD-38s">
+                                <rect key="frame" x="155" y="127" width="169" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="This is my label" id="ALB-pi-jvz">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="l5a-dh-wyj" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="EIl-j0-U7q"/>
-                            <constraint firstAttribute="trailing" secondItem="l5a-dh-wyj" secondAttribute="trailing" id="ecu-ef-chr"/>
-                            <constraint firstItem="l5a-dh-wyj" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="lsL-qS-J2i"/>
-                            <constraint firstAttribute="bottom" secondItem="l5a-dh-wyj" secondAttribute="bottom" id="ocJ-MH-dCE"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

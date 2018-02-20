@@ -19,6 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = #selector(togglePopover(_:))
         }
         
+        //popover.appearance = NSAppearance.init(named: NSAppearance.Name.vibrantDark)
         popover.contentViewController = ViewController.create("ViewController")
         popover.animates = false
     }
@@ -35,12 +36,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = statusItem.button {
             NSRunningApplication.current.activate(options: NSApplication.ActivationOptions.activateIgnoringOtherApps)
             
-//            if let popoverView = popover.contentViewController?.view.superview {
-//                popoverView.wantsLayer = true
-//                popoverView.layer?.backgroundColor = NSColor.red.withAlphaComponent(1.0).cgColor
-//            }
-
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+
+            if let popoverView = popover.contentViewController?.view.superview {
+                popoverView.wantsLayer = true
+                popoverView.layer?.backgroundColor = NSColor.controlBackgroundColor.withAlphaComponent(1.0).cgColor
+            }
         }
     }
     
