@@ -9,8 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    @IBOutlet weak var first: NSButton!
+    @IBOutlet weak var waiting: NSProgressIndicatorOpaque!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        waiting.startAnimation(nil)
     }
 }
 

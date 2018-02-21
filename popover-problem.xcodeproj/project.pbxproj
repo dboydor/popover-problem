@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272AF9AD203E1F7000F917F3 /* NSButtonCellOpaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272AF9AC203E1F7000F917F3 /* NSButtonCellOpaque.swift */; };
+		272AF9AF203E224700F917F3 /* NSProgressIndicatorlOpaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272AF9AE203E224700F917F3 /* NSProgressIndicatorlOpaque.swift */; };
 		2786BC51203CB89300F98DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786BC50203CB89300F98DB3 /* AppDelegate.swift */; };
 		2786BC53203CB89300F98DB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786BC52203CB89300F98DB3 /* ViewController.swift */; };
 		2786BC55203CB89300F98DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2786BC54203CB89300F98DB3 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272AF9AC203E1F7000F917F3 /* NSButtonCellOpaque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSButtonCellOpaque.swift; sourceTree = "<group>"; };
+		272AF9AE203E224700F917F3 /* NSProgressIndicatorlOpaque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSProgressIndicatorlOpaque.swift; sourceTree = "<group>"; };
 		2786BC4D203CB89300F98DB3 /* popover-problem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "popover-problem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2786BC50203CB89300F98DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2786BC52203CB89300F98DB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 			children = (
 				2786BC50203CB89300F98DB3 /* AppDelegate.swift */,
 				2786BC52203CB89300F98DB3 /* ViewController.swift */,
+				272AF9AC203E1F7000F917F3 /* NSButtonCellOpaque.swift */,
+				272AF9AE203E224700F917F3 /* NSProgressIndicatorlOpaque.swift */,
 				2786BC61203CD7D100F98DB3 /* NSViewOpaque.swift */,
 				2786BC60203CD7D100F98DB3 /* NSViewOpaqueBackground.swift */,
 				2786BC54203CB89300F98DB3 /* Assets.xcassets */,
@@ -140,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272AF9AD203E1F7000F917F3 /* NSButtonCellOpaque.swift in Sources */,
 				2786BC63203CD7D100F98DB3 /* NSViewOpaque.swift in Sources */,
 				2786BC53203CB89300F98DB3 /* ViewController.swift in Sources */,
 				2786BC62203CD7D100F98DB3 /* NSViewOpaqueBackground.swift in Sources */,
+				272AF9AF203E224700F917F3 /* NSProgressIndicatorlOpaque.swift in Sources */,
 				2786BC51203CB89300F98DB3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

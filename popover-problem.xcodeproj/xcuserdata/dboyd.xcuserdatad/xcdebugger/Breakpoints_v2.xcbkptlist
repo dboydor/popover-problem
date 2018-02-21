@@ -9,14 +9,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "popover-problem/AppDelegate.swift"
-            timestampString = "540861167.1630861"
+            filePath = "popover-problem/NSButtonOpaque.swift"
+            timestampString = "540942711.175482"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "showPopover(sender:)"
-            landmarkType = "7">
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "isOpaque"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

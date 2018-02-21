@@ -691,7 +691,7 @@
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-2o-ihe">
                                 <rect key="frame" x="77" y="234" width="326" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Look at this horrible transparent background paint" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="BMm-ap-0x3">
+                                <buttonCell key="cell" type="check" title="Look at this horrible transparent background paint" bezelStyle="regularSquare" imagePosition="left" state="on" identifier="I" inset="2" id="BMm-ap-0x3" customClass="NSButtonCellOpaque" customModule="popover_problem" customModuleProvider="target">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -699,7 +699,7 @@
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqO-BZ-mjN">
                                 <rect key="frame" x="149" y="212" width="181" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="It's still bad in this one too" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cLe-lp-wDO">
+                                <buttonCell key="cell" type="check" title="It's still bad in this one too" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cLe-lp-wDO" customClass="NSButtonCellOpaque" customModule="popover_problem" customModuleProvider="target">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -707,26 +707,30 @@
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sE9-QZ-EsO">
                                 <rect key="frame" x="145" y="188" width="189" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="What can be done about it?" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="tXH-JV-w8q">
+                                <buttonCell key="cell" type="check" title="What can be done about it?" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="tXH-JV-w8q" customClass="NSButtonCellOpaque" customModule="popover_problem" customModuleProvider="target">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-KA-lQh">
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-KA-lQh" customClass="NSProgressIndicatorOpaque" customModule="popover_problem" customModuleProvider="target">
                                 <rect key="frame" x="128" y="128" width="16" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzB-iD-38s">
-                                <rect key="frame" x="155" y="127" width="169" height="17"/>
+                                <rect key="frame" x="157" y="127" width="165" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="This is my label" id="ALB-pi-jvz">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="This is my label" drawsBackground="YES" id="ALB-pi-jvz">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="first" destination="vkf-2o-ihe" id="xLJ-zS-JtZ"/>
+                        <outlet property="waiting" destination="8bA-KA-lQh" id="qzk-GI-z7L"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
